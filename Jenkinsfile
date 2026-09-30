@@ -1,4 +1,4 @@
-pipeline {
+ pipeline {
     agent any
 
     stages {
@@ -12,9 +12,9 @@ pipeline {
 
         stage('Verify Workspace') {
             steps {
-                sh 'pwd'
-                sh 'ls -la'
-                sh 'whoami'
+                bat 'cd'
+                bat 'dir /a'
+                bat 'whoami'
             }
         }
 
